@@ -13,7 +13,4 @@ deployment:
       - docker tag -f scholzj/java-client-tests:0.36 docker.io/scholzj/java-client-tests:0.36
       - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
       - docker push scholzj/java-client-tests:0.36
-      
-notify:
-  webhooks:
-    - url: https://circleci.com/api/v1/project/scholzj/amqp-java-client-tests?circle-token=2c3d966680613966227bb11bb252ce6288222ddb
+      - curl -X POST --header "Content-Type: application/json" -d '{ "build_parameters": { "MAVEN_TEST_SUITE": "qpid-0.36.xml", "BROKER_DOCKER_IMAGE": "scholzj/java-client-tests:0.36" } }' https://circleci.com/api/v1/project/scholzj/amqp-java-client-tests?circle-token=2c3d966680613966227bb11bb252ce6288222ddb
