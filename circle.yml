@@ -10,7 +10,7 @@ deployment:
   docker:
     branch: /.*/
     commands:
-      - docker tag -f schojak/java-client-tests:sim docker.io/schojak/java-client-tests:0.36
+      - docker tag -f schojak/java-client-tests:0.36 docker.io/schojak/java-client-tests:0.36
       - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
       - docker push schojak/java-client-tests:0.36
       
