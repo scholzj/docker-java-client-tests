@@ -1,4 +1,4 @@
-FROM		scholzj/qpid-cpp:0.34
+FROM		scholzj/merge-messaging:3.2
 MAINTAINER 	JAkub Scholz "www@scholzj.com"
 
 # Add configuration files
