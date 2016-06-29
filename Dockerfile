@@ -4,7 +4,7 @@ MAINTAINER 	JAkub Scholz "www@scholzj.com"
 # Add configuration files
 USER root
 COPY ./var /var 
-RUN chown -R qpidd:0 /var/lib/qpidd
+RUN chown -R qpidd:qpidd /var/lib/qpidd
 
 # Switch to qpidd user
 USER qpidd
