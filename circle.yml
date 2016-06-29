@@ -16,4 +16,4 @@ deployment:
       
 notify:
   webhooks:
-    - url: https://circleci.com/api/v1/project/scholzj/docker-java-client-tests?circle-token=2c3d966680613966227bb11bb252ce6288222ddb
+    - url: https://circleci.com/api/v1/project/scholzj/amqp-java-client-tests?circle-token=2c3d966680613966227bb11bb252ce6288222ddb
