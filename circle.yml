@@ -1,0 +1,19 @@
+machine:
+  services:
+    - docker
+
+test:
+  override:
+    - docker build -t schojak/java-client-tests:0.36 .
+    
+deployment:
+  docker:
+    branch: /.*/
+    commands:
+      - docker tag -f schojak/java-client-tests:sim docker.io/schojak/java-client-tests:0.36
+      - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+      - docker push schojak/java-client-tests:0.36
+      
+notify:
+  webhooks:
+    - url: https://circleci.com/api/v1/project/scholzj/docker-java-client-tests?circle-token=2c3d966680613966227bb11bb252ce6288222ddb
