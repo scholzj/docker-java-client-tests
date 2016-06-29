@@ -1,2 +1,0 @@
-set_lk_max_locks 10000
-set_lk_max_objects 10000

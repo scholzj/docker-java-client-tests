@@ -1,4 +1,4 @@
-FROM		scholzj/merge-messaging:3.2
+FROM		scholzj/merge-messaging:3.0.2
 MAINTAINER 	JAkub Scholz "www@scholzj.com"
 
 # Add configuration files
