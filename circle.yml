@@ -4,15 +4,15 @@ machine:
 
 test:
   override:
-    - docker build -t scholzj/java-client-tests:0.36 .
-    
+    - docker build -t scholzj/java-client-tests:1.35 .
+
 deployment:
   docker:
     branch: /.*/
     commands:
-      - docker tag -f scholzj/java-client-tests:0.36 docker.io/scholzj/java-client-tests:0.36
+      - docker tag -f scholzj/java-client-tests:1.35 docker.io/scholzj/java-client-tests:1.35
       - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-      - docker push scholzj/java-client-tests:0.36
+      - docker push scholzj/java-client-tests:1.35
 
 notify:
   webhooks:
