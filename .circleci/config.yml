@@ -19,7 +19,7 @@ jobs:
             docker tag scholzj/java-client-tests:devel docker.io/scholzj/java-client-tests:1.37
       - deploy:
           name: Login to Docker Hub
-          command: docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+          command: docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
       - deploy:
           name: Push docker images
           command: |
