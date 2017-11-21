@@ -1,4 +1,4 @@
-FROM		scholzj/qpid-cpp:devel
+FROM		scholzj/qpid-cpp:1.36.0-rc1
 MAINTAINER 	JAkub Scholz "www@scholzj.com"
 
 # Add configuration files

@@ -7,4 +7,6 @@ This repository contains following images:
 - 3.2.0 is based on Red Hat MRG Messaging 3.2.0
 - 0.34 is based on Apache Qpid 0.34
 - 1.35 is based on Apache Qpid 1.35
+- 1.36 is based on Apache Qpid 1.36
+- 1.37 is based on Apache Qpid 1.37
 - master is based on Apache Qpid trunk/master
