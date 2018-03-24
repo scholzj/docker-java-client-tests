@@ -1,5 +1,5 @@
 FROM		scholzj/qpid-cpp:devel
-MAINTAINER 	JAkub Scholz "www@scholzj.com"
+LABEL       maintainer="Jakub Scholz <www@scholzj.com>"
 
 # Add configuration files
 USER root

@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: docker:17.06.0-git
         environment:
-          BROKER_VERSION: "1.38"
+          BROKER_VERSION: "1.39"
     steps:
       - setup_remote_docker
       - checkout
