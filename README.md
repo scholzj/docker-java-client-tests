@@ -10,4 +10,6 @@ This repository contains following images:
 - 1.35 is based on Apache Qpid 1.35
 - 1.36 is based on Apache Qpid 1.36
 - 1.37 is based on Apache Qpid 1.37
+- 1.38 is based on Apache Qpid 1.38
+- 1.39 is based on Apache Qpid 1.39
 - master is based on Apache Qpid trunk/master
