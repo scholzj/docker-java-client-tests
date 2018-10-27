@@ -1,4 +1,4 @@
-FROM		scholzj/qpid-cpp:1.39.0-rc1
+FROM		scholzj/qpid-cpp:1.39.0
 LABEL       maintainer="Jakub Scholz <www@scholzj.com>"
 
 # Add configuration files

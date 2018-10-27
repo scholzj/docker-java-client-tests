@@ -25,7 +25,6 @@ jobs:
       - deploy:
           name: Push docker images
           command: |
-            docker push scholzj/java-client-tests:devel
             docker push scholzj/java-client-tests:${BROKER_VERSION}
       - deploy:
           name: Trigger tests
